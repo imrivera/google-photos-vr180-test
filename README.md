@@ -12,7 +12,7 @@ There are included 3 JPG files, the metadata is the same for all of them. The fo
 The basic and extended XMP contents are also included for easier inspection as separated files _test?-basic-xmp.bin_ and _test?-ext-xmp.bin_. The extended XMP used is the same for all of them.
 
 ## test1.jpg
-The basic XMP consists of 3 `<rdf:Description>` elements and the values for `GPano`, `GImage` and `xmpNote` are subelements. `GPano` elements **ARE NOT** in the first `<rdf:Description>` element.
+The basic XMP consists of 3 `<rdf:Description>` elements and the property values for `GPano`, `GImage` and `xmpNote` are subelements. `GPano` elements **ARE NOT** in the first `<rdf:Description>` element.
 
 **PROBLEM:** Google Photos shows the same image for both eyes and the perspective is incorrect, you are able to see the left and right sides of the photo at the same time.
 
@@ -48,7 +48,7 @@ The basic XMP consists of 3 `<rdf:Description>` elements and the values for `GPa
 ![Left and right side are visible at the same time](test1-google-photos-screenshot.jpg)
 
 ## test2.jpg
-As in test1.jpg, the basic XMP consists of 3 `<rdf:Description>` elements and the values for `GPano`, `GImage` and `xmpNote` are subelements. `GPano` values **are in the first** `<rdf:Description>` element.
+As in test1.jpg, the basic XMP consists of 3 `<rdf:Description>` elements and the property values for `GPano`, `GImage` and `xmpNote` are subelements. `GPano` values **are in the first** `<rdf:Description>` element.
 
 The perspective in this case seems to be correct, you are unable to see right and left sides at the same time.
 
@@ -86,9 +86,9 @@ The perspective in this case seems to be correct, you are unable to see right an
 ![Both eyes show the same image](test2-google-photos-screenshot.jpg)
 
 ## test3.jpg
-The basic XMP consists of just one <rdf:Description> element. The values for `GPano`, `GImage` and `xmpNote` are serialized as attributes of the `<rdf:Description>` element, not as subelements.
+The basic XMP consists of just one <rdf:Description> element. The property values for `GPano`, `GImage` and `xmpNote` are serialized as attributes of the `<rdf:Description>` element, not as subelements. This form of serialization is optional, not mandatory (see [Expected Behavior](#expected-behavior)).
 
-This case works perfectly.
+**This case works perfectly.**
 
 ### Basic XMP Content
 ```xml
@@ -129,6 +129,6 @@ or a separate `rdf:Description` element for each XMP property namespace.
 > #### Section 7.9.2.2: `rdf:Description`with property attributes
 > Property and structure field elements that have normal (non-URI) simple, unqualified values **may** be replaced with attributes in the `rdf:Description` element.
 
-Values as attributes is optional, not mandatory.
+Properties as attributes are optional, not mandatory.
 
 
