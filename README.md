@@ -2,6 +2,7 @@
 # Google Photos VR180 XMP Metadata Test
 
 [Link to Google Support forum](https://support.google.com/photos/thread/935320?hl=en)
+
 [Cardboard Camera VR Photo Format](https://developers.google.com/vr/reference/cardboard-camera-vr-photo-format)
 
 Hi! These are some manually generated VR180 JPG files to show some problems that Google Photos has parsing XMP metadata. These had been tested in a Google Pixel 2 XL with Android 9 and Google Photos 4.7.0.224579915.
