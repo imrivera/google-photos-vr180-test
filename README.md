@@ -86,7 +86,7 @@ The perspective in this case seems to be correct, you are unable to see right an
 ![Both eyes show the same image](test2-google-photos-screenshot.jpg)
 
 ## test3.jpg
-The basic XMP consists of just one <rdf:Description> element. The values for GPano, GImage and xmpNote are serialized as attributes of the <rdf:Description> element, not as subelements.
+The basic XMP consists of just one <rdf:Description> element. The values for `GPano`, `GImage` and `xmpNote` are serialized as attributes of the `<rdf:Description>` element, not as subelements.
 
 This case works perfectly.
 
