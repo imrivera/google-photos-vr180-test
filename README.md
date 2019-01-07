@@ -48,7 +48,7 @@ The basic XMP consists of 3 `<rdf:Description>` elements and the property values
 ![Left and right side are visible at the same time](test1-google-photos-screenshot.jpg)
 
 ## test2.jpg
-As in test1.jpg, the basic XMP consists of 3 `<rdf:Description>` elements and the property values for `GPano`, `GImage` and `xmpNote` are subelements. `GPano` values **are in the first** `<rdf:Description>` element.
+As in [test1.jpg](#test1jpg), the basic XMP consists of 3 `<rdf:Description>` elements and the property values for `GPano`, `GImage` and `xmpNote` are subelements. `GPano` values **are in the first** `<rdf:Description>` element.
 
 The perspective in this case seems to be correct, you are unable to see right and left sides at the same time.
 
